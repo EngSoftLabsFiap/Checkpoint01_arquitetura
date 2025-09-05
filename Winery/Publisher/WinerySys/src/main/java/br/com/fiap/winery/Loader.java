@@ -7,10 +7,11 @@ public class Loader {
 
         WineStockServiceImplementation wineStock = new WineStockServiceImplementation();
         Endpoint.publish("http://localhost:8085/WineStockService", wineStock);
-        System.out.println("Serviço publicado!");
+        System.out.println("Serviço publicado! - wineStock !");
 
+        WineWarningServiceImplementation wineWarning = new WineWarningServiceImplementation();
+        Endpoint.publish("http://localhost:8085/WineWarningService", wineWarning);
+        System.out.println("Serviço publicado! - wineWarning");
 
     }
-
-
 }

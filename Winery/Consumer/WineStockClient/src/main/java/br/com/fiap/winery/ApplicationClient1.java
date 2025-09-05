@@ -18,6 +18,6 @@ public class ApplicationClient1 {
         WineStockService wineStockService = service.getPort(WineStockService.class);
         String menu = wineStockService.getMenu();
 
-//        System.out.println(menu);
+       System.out.println(menu);
     }
 }
